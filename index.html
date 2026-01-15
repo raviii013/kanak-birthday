@@ -58,7 +58,7 @@
                     <button id="btn__letter">
                         <div class="mail">
                             <img src="./images/giphy.gif" alt="" width="40">
-                            <span>CHALO Idhar click kro <i class="fa-regular fa-envelope"></i></span>
+                            <span>Idhar click kro <i class="fa-regular fa-envelope"></i></span>
                             <img src="./images/giphy.gif" alt="" width="40">
                         </div>
                     </button>
@@ -148,23 +148,26 @@
                         <div id="fbiGifOverlay" style="display: flex; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: white; justify-content: center; align-items: center; z-index: 100; border-radius: 10px;">
                             <img src="./images/fbi.gif" alt="FBI" style="max-width: 90%; max-height: 90%;">
                         </div>
-                        <h3>T!</h3>
-                        <h2>Happy birthday KAJU KALTIII AKA KANAK SHARMA JI🥳🎂
-                            WELCOME TO 17 YEARS OLD CLUB🥳 
-                            1"7" thala for a reason xd,
-                            enjoy your day to the fullest. May all your dreams come true.
-                            17th year best year hota or 12th class full of memories. han but 
-                            life thodi thodi serious bhi ho jaati but mujhe pata hai but aap itne horror movies dekh chuki hai
-                            toh handle kr hi lengi xd. hmesha apni pyaari smile aise hi banaye rakhna.
-                            🤗 I am wishing you happy birthday
-                            🎈🎂🎈  😌
-                        </h2>
+                        <div id="cardContent" style="opacity: 0;">
+                            <h3>T!</h3>
+                            <h2>Happy birthday KAJU KALTIII AKA KANAK SHARMA JI🥳🎂
+                                WELCOME TO 17 YEARS OLD CLUB🥳 
+                                1"7" thala for a reason xd,
+                                enjoy your day to the fullest. May all your dreams come true.
+                                17th year best year hota or 12th class full of memories. han but 
+                                life thodi thodi serious bhi ho jaati but mujhe pata hai but aap itne horror movies dekh chuki hai
+                                toh handle kr hi lengi xd. hmesha apni pyaari smile aise hi banaye rakhna.
+                                🤗 I am wishing you happy birthday
+                                🎈🎂🎈  😌
+                            </h2>
 
-                        <div class="imageCute2">
-                            <img src="cute2.png" alt="">
-                            <img id="mewmew" src="./images/mewmew.gif" alt="">
-                            <img src="./images/kk2.jpg" alt="" width="80">
-                            <img id="mewmew" src="./images/mewmew.gif" alt="">
+                            <div class="imageCute2">
+                                <img src="cute2.png" alt="">
+                                <img id="mewmew" src="./images/mewmew.gif" alt="">
+                                <img src="./images/kk2.jpg" alt="" width="80">
+                                <img id="mewmew" src="./images/mewmew.gif" alt="">
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -224,7 +227,8 @@
         }, 2000)
         setTimeout(function () {
             document.getElementById('fbiGifOverlay').style.display = 'none';
-        }, 2000)
+            document.getElementById('cardContent').style.opacity = '1';
+        }, 3500)
         setTimeout(function () {
             document.querySelector("#heart__letter").classList.add("animationOp");
             document.querySelector(".love__img").classList.add("animationOp");
@@ -255,6 +259,7 @@
         currentIndexLetter = 0
         currentIndexTitle = 0
         document.getElementById('fbiGifOverlay').style.display = 'flex';
+        document.getElementById('cardContent').style.opacity = '0';
         document.querySelector("#heart__letter").classList.remove("animationOp");
         document.querySelector(".love__img").classList.remove("animationOp");
         document.querySelector("#mewmew").classList.remove("animationOp");
