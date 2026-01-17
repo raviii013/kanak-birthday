@@ -56,7 +56,7 @@ body {
     width: 100%;
     position: relative;
     display: flex;
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 .content .left, .content .right{
     position: relative;
@@ -164,7 +164,7 @@ body {
 .title .hat{
     position: absolute;
     right: 45px;
-    top: -350px;
+    top: -380px;
     transform: rotate(-40deg);
     z-index: -1;
     animation: topHat 4s 7s forwards ease;
@@ -896,6 +896,45 @@ body {
     width: calc(100%);
     height: calc(100%);
 }
+.boxMail .boxMail-container .card1 .corner-image{
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    background-color: rgb(38, 123, 250);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid rgb(248, 89, 89);
+    z-index: 2;
+}
+.boxMail .boxMail-container .card1 .corner-image img{
+    position: absolute;
+    object-fit: cover;
+    width: calc(100%);
+    height: calc(100%);
+}
+.boxMail .boxMail-container .card1 .corner-top-left{
+    top: 8px;
+    left: 8px;
+}
+.boxMail .boxMail-container .card1 .corner-top-right{
+    top: 8px;
+    right: 8px;
+}
+.boxMail .boxMail-container .card1 .corner-top-center{
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+}
+.boxMail .boxMail-container .card1 .corner-bottom-left{
+    bottom: 8px;
+    left: 8px;
+}
+.boxMail .boxMail-container .card1 .corner-bottom-right{
+    bottom: 8px;
+    right: 8px;
+}
 .boxMail .boxMail-container .card1 h3{
     font-family: 'Dancing Script', cursive;
     font-size: 40px;
@@ -959,10 +998,11 @@ body {
 }
 .boxMail .boxMail-container .card2 h2{
     font-family: 'Dancing Script', cursive;
-    padding: 0px 20px;
+    padding: 80px 20px 0px 20px;
     text-indent: 20px;
     font-size: 22px;
     opacity: 0;
+    transition: opacity 0.5s ease-in;
 }
 .boxMail .boxMail-container .card2:hover h2{
     animation: texth2 2s forwards;
@@ -1021,7 +1061,7 @@ body {
     }
 }
 .boxMail .boxMail-container .card2 .card2-content .imageCute2 img{
-    width: 40px;
+    width: 60px;
 }
 .boxMail .fa-xmark{
     position: fixed;

@@ -82,9 +82,6 @@
                         <img width="100px" src="./images/balloon2.png" alt="">
                     </div>
                 </div>
-                <div class="kk7-image">
-                    <img src="./images/kk7.jpg" alt="">
-                </div>
                 <div class="cricle">
                     <div class="text__cricle">
                         <span style="--i: 1;">h</span>
@@ -142,6 +139,9 @@
                     <div class="corner-image corner-top-right">
                         <img src="./images/kk4.jpg" alt="">
                     </div>
+                    <div class="corner-image corner-top-center">
+                        <img src="./images/kk7.jpg" alt="">
+                    </div>
                     <div class="corner-image corner-bottom-left">
                         <img src="./images/kk5.jpg" alt="">
                     </div>
@@ -164,7 +164,7 @@
                             <img src="./images/fbi.gif" alt="FBI" style="max-width: 90%; max-height: 90%;">
                         </div>
                         <div id="cardContent" style="opacity: 0;">
-                            <h3>T!</h3>
+                            <h3></h3>
                             <h2>Happy birthday KAJU KALTIII AKA KANAK SHARMA JI🥳🎂
                                 WELCOME TO 17 YEARS OLD CLUB🥳 
                                 1"7" thala for a reason xd,
@@ -173,13 +173,13 @@
                                 life thodi thodi serious bhi ho jaati but mujhe pata hai but aap itne horror movies dekh chuki hai
                                 toh handle kr hi lengi xd. hmesha apni pyaari smile aise hi banaye rakhna.
                                 🤗 I am wishing you happy birthday
-                                🎈🎂🎈  😌
+                                🎈🎂🎈 Chaliye ab muskurayiye hehehe 😌
                             </h2>
 
                             <div class="imageCute2">
                                 <img src="cute2.png" alt="">
                                 <img id="mewmew" class="mewmew-animation" src="./images/mewmew.gif" alt="">
-                                <img class="mewmew-animation" src="./images/kk2.jpg" alt="" width="80">
+                                <img class="mewmew-animation" src="./images/kk2.jpg" alt="" width="100">
                                 <img id="mewmew" class="mewmew-animation" src="./images/mewmew.gif" alt="">
                             </div>
                         </div>
@@ -313,6 +313,12 @@
         setTimeout(function () {
             document.getElementById('fbiGifOverlay').style.display = 'none';
             document.getElementById('cardContent').style.opacity = '1';
+            
+            // Make h2 text visible automatically
+            var h2Element = document.querySelector('.boxMail .boxMail-container .card2 h2');
+            if (h2Element) {
+                h2Element.style.opacity = '1';
+            }
             
             // Trigger mewmew animations
             setTimeout(function() {
